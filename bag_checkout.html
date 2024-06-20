@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KERANJANG</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="bag_checkout.css">
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="company-logo">
+                <div class="logo">
+                    <img src="logo.png" alt="Janji Manis">
+                </div>
+                <div class="logo2">
+                    <img src="logo2.png" alt="Janji Manis">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="cart-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Harga Satuan</th>
+                    <th>Kuantitas</th>
+                    <th>Total Harga</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+            </tbody>
+        </table>
+
+        <div class="checkout-section">
+            <div class="total-price" id="total-price">
+                <span>Total (0 produk): Rp0</span>
+            </div>
+            <a href="pembayaran.html">
+                <button class="checkout-btn">Checkout</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="fixed-bottom-bar">
+        <a href="javascript:void(0)" class="back" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>
+            <Span>Kembali</Span>
+        </a>
+        <a href="index.html" class="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+    </div>
+    <div style="height: 50px; background: #f0f0f0;"></div>
+
+    <script src="bag.js"></script>
+</body>
+</html>

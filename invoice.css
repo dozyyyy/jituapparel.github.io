@@ -1,0 +1,105 @@
+.invoice-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    background-color: #faf9f9;
+}
+
+.invoice-container table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.invoice-container table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.invoice-container table tr td:nth-child(2) {
+    text-align: right;
+}
+
+.invoice-container table tr.header table td {
+    padding-bottom: 20px;
+}
+
+.invoice-container table tr.header table td.logo {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+
+.invoice-container table tr.details table td {
+    padding-bottom: 40px;
+}
+
+.item-details img {
+    width: 45px; 
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.invoice-container table tr.label-row td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.invoice-container table tr.item-details td {
+    padding-bottom: 20px;
+}
+
+.invoice-container table tr.item-row td {
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-container table tr.item-row.last td {
+    border-bottom: none;
+}
+
+.invoice-container table tr.total-row td:nth-child(2) {
+    border-top: 2px solid #eee;
+    font-weight: bold;
+}
+
+
+.invoice-container.rtl {
+    direction: rtl;
+    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.invoice-container.rtl table {
+    text-align: right;
+}
+
+.invoice-container.rtl table tr td:nth-child(2) {
+    text-align: left;
+}
+
+.button a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .invoice-container table tr.header table td {
+        font-size: 13px;
+    }
+
+    .invoice-container table tr.details table td {
+        font-size: 13px;
+        word-break: break-word;
+    }
+}

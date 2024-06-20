@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pilih Metode Pembayaran</h1>
+        <div class="payment-methods">
+            <div class="payment-method" onclick="showDetails('bank-transfer')">
+                <img src="bca.png" alt="Virtual Account">
+                <img src="bri.png" alt="Virtual Account">
+                <img src="bjb.png" alt="Virtual Account">
+                <img src="jago.png" alt="Virtual Account">
+                <p>Transfer Bank</p>
+            </div>
+            <div class="payment-method" onclick="showDetails('virtual-account')">
+                <img src="bca.png" alt="Virtual Account">
+                <img src="bri.png" alt="Virtual Account">
+                <img src="bjb.png" alt="Virtual Account">
+                <img src="jago.png" alt="Virtual Account">
+                <p>Virtual Account</p>
+            </div>
+            <div class="payment-method-qris" onclick="showDetails('qris')">
+                <img src="qris.png" alt="QRIS">
+                <p>QRIS</p>
+            </div>
+            <div class="payment-method" onclick="showDetails('supermarket')">
+                <img src="alfamart.png" alt="Supermarket">
+                <img src="indomaret.png" alt="Supermarket">
+                <p>Supermarket</p>
+            </div>
+        </div>
+        <div class="button">
+            <a href="invoice.html">
+                <Span>Sudah Bayar</Span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="payment-details" id="payment-details">
+        </div>
+    </div>
+    <script src="pembayaran.js"></script>
+</body>
+</html>

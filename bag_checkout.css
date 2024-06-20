@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+  }
+  z
+  .top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    align-items: center;
+  }
+  
+  .company-logo {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  .logo2 img{
+    height: 38px;
+    width: auto;
+    margin-left: 8px;
+    margin-top: 10px;
+  }
+  
+  .logo img {
+    height: 38px;
+    width: auto;
+  }
+  
+
+.cart-container {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f5f5f5;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #555;
+}
+
+.free-return {
+    font-size: 12px;
+    color: #4caf50;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: #534529;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #534529;
+}
+
+.checkout-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background-color: #534529;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #534529;
+}
+
+.total-price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fixed-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.fixed-bottom-bar a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.fixed-bottom-bar a.home,
+.fixed-bottom-bar a.back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 0;
+}
+
+
+span{
+    margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .company-logo {
+        flex-wrap: wrap;
+    }
+    
+    .cart-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .product-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-info img {
+        margin-bottom: 10px;
+    }
+
+    .checkout-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .checkout-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px;
+        font-size: 12px;
+        text-align: right;
+    }
+
+    td::before {
+        content: attr(data-label);
+        flex: 1;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .product-info {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .product-info img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .product-name {
+        font-size: 12px;
+    }
+
+    .free-return {
+        font-size: 10px;
+    }
+
+    .old-price {
+        font-size: 12px;
+    }
+
+    input[type="number"] {
+        width: 40px;
+    }
+
+    .checkout-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .checkout-btn {
+        margin-top: 10px;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .total-price {
+        font-size: 14px;
+    }
+}
